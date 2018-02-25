@@ -1,0 +1,85 @@
+/*!
+* Based on Bootstrap v4.0.0 (https://getbootstrap.com) 
+*/
+ 
+// Options
+// 
+// Quickly modify global styling by enabling or disabling optional features.
+  
+@import url('https://fonts.googleapis.com/css?family=Raleway'); 
+$enable-rounded:            true !default;
+$enable-shadows:            true;
+$enable-transitions:        true;
+$enable-hover-media-query:  false;
+$enable-grid-classes:       true;
+$enable-print-styles:       true;
+
+// Variables
+//
+// Colors
+
+$theme-colors: (
+  primary: #12bbad,
+  secondary: #4f70ce,
+  light: #f3f3f3,
+  dark: #151515,
+  info: #ebebeb,
+  success: #28a745,
+  warning: #ffc107,
+  danger: #dc3545
+);
+
+$body-bg: map-get($theme-colors, 'light');
+$body-color: #333;
+
+
+$body-color-inverse: invert($body-color) !default;
+$link-color: #151515;
+
+
+
+// Fonts
+$font-family-base: Raleway;
+
+$headings-font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+$display-font-family: $headings-font-family;
+$font-weight-normal: 200;
+$headings-font-weight: 200;
+$lead-font-size:   1.30rem;
+$headings-line-height: 1.5;
+
+$spacer: 1.5rem;
+
+$font-size-base: 0.95rem;
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 960px);
+
+//Cards
+
+$card-border-color: 	none;
+$card-bg:							$body-bg;
+
+@import 'bootstrap-4.0.0';
+
+
+html,body {
+   height:100%;
+}
+
+.serif {
+	font-family: $headings-font-family;
+}
+
+.cover {
+	min-height:100%;
+  display:flex;
+  align-items:center;
+}
+
+/* Animate state between .navbar and .navbar-ontop */
+.navbar  {
+  transition: opacity .5s ease-out;
+}
+
+.navbar-ontop {
+  opacity:0;
+}
