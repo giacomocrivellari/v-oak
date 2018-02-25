@@ -6,7 +6,9 @@
 // 
 // Quickly modify global styling by enabling or disabling optional features.
   
-@import url('https://fonts.googleapis.com/css?family=Raleway'); 
+@import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,800');
+@import url('https://fonts.googleapis.com/css?family=Quattrocento'); 
+
 $enable-rounded:            true !default;
 $enable-shadows:            true;
 $enable-transitions:        true;
@@ -29,35 +31,41 @@ $theme-colors: (
   danger: #dc3545
 );
 
-$body-bg: map-get($theme-colors, 'light');
+$body-bg: white;
+
 $body-color: #333;
 
 
 $body-color-inverse: invert($body-color) !default;
-$link-color: #151515;
+$link-color: #aaa;
+
 
 
 
 // Fonts
-$font-family-base: Raleway;
+$font-family-base: Quattrocento;
+$headings-font-family: Raleway;
 
-$headings-font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, serif;
+
+
 $display-font-family: $headings-font-family;
-$font-weight-normal: 200;
-$headings-font-weight: 200;
 $lead-font-size:   1.30rem;
 $headings-line-height: 1.5;
 
-$spacer: 1.5rem;
-
 $font-size-base: 0.95rem;
-$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 960px);
+
 
 //Cards
 
 $card-border-color: 	none;
 $card-bg:							$body-bg;
 
+$container-max-widths: (sm: 540px, md: 720px, lg: 960px, xl: 960px);
+$spacer: 1.5rem;
+
+$border-radius: 0px;
+$border-radius-lg: $border-radius * 1.2;
+$border-radius-sm: $border-radius * .8;
 @import 'bootstrap-4.0.0';
 
 
@@ -75,11 +83,6 @@ html,body {
   align-items:center;
 }
 
-/* Animate state between .navbar and .navbar-ontop */
-.navbar  {
-  transition: opacity .5s ease-out;
-}
-
-.navbar-ontop {
-  opacity:0;
+.btn-outline-dark:hover {
+	color:white !important;
 }
