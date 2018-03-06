@@ -66,6 +66,13 @@ $spacer: 1.5rem;
 $border-radius: 0px;
 $border-radius-lg: $border-radius * 1.2;
 $border-radius-sm: $border-radius * .8;
+
+//Forms
+$input-bg: rgba(map-get($theme-colors, 'light'), 0.05);
+$input-border-color: transparent;
+
+$modal-transition:                  transform .3s ease-out !default;
+
 @import 'bootstrap-4.0.0';
 
 
