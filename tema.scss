@@ -6,6 +6,8 @@
 // 
 // Quickly modify global styling by enabling or disabling optional features.
   
+@import url('https://fonts.googleapis.com/css?family=Raleway'); 
+@import url('https://fonts.googleapis.com/css?family=Anton'); 
 @import url('https://fonts.googleapis.com/css?family=Raleway:200,400,600,800');
 @import url('https://fonts.googleapis.com/css?family=Quattrocento'); 
 
@@ -48,7 +50,10 @@ $headings-font-family: Raleway;
 
 
 
-$display-font-family: $headings-font-family;
+
+
+$display-font-family: Anton;
+
 $lead-font-size:   1.30rem;
 $headings-line-height: 1.5;
 
