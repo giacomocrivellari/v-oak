@@ -6108,23 +6108,17 @@ html, body {
 .serif {
   font-family: Raleway; }
 
+.navbar {
+  opacity: 1;
+  transition: opacity .5s ease-out; }
+
+.navbar-ontop {
+  opacity: 0 !important; }
+
 .cover {
   min-height: 100%;
   display: flex;
   align-items: center; }
-
-.filter-dark {
-  overflow: hidden;
-  position: relative;
-  color: #fff; }
-  .filter-dark:before {
-    position: absolute;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 100%;
-    content: ' ';
-    background: rgba(21, 21, 21, 0.75); }
 
 .btn-outline-dark:hover {
   color: white !important; }
