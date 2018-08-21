@@ -75,6 +75,7 @@ $border-radius-sm: $border-radius * .8;
 //Forms
 $input-bg: rgba(map-get($theme-colors, 'light'), 0.1);
 $input-border-color: transparent;
+$input-color:     white;
 
 $modal-transition:                  transform .3s ease-out !default;
 
